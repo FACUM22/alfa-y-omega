@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Admin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styleadmin.css">
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div id="login">
+  <h2>Login Admin</h2>
+
+  <input id="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Contraseña">
+
+  <button onclick="login()">Entrar</button>
+</div>
+
+<!-- PANEL -->
+<div id="panel" style="display:none">
+
+  <a href="index.html">🏠 Ir al inicio</a>
+
+  <h2>Panel Admin</h2>
+
+  <input id="nombre" placeholder="Nombre">
+  <input id="precio" placeholder="Precio">
+
+  <select id="categoria">
+    <option value="ropa">Ropa</option>
+    <option value="joyas">Joyas</option>
+    <option value="perfumes">Perfumes</option>
+  </select>
+
+  <input type="file" id="img">
+
+  <button onclick="subir()">💾 Guardar</button>
+
+  <hr>
+
+  <h3>📦 Productos</h3>
+  <div id="lista"></div>
+
+</div>
+
+<!-- FIREBASE -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+
+<script src="firebase.js"></script>
+<script src="admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+
+
+body{
+  font-family: 'Arial', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  text-align: center;
+}
+
+/* 🔐 LOGIN CARD */
+#login{
+  width: 300px;
+  margin: 80px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* TITULO */
+h2, h3{
+  margin: 10px 0;
+}
+
+/* INPUTS PRO */
+input, select{
+  width: 90%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus{
+  border-color: #ff69b4;
+  box-shadow: 0 0 5px rgba(255,105,180,0.4);
+}
+
+/* BOTONES PRO */
+button{
+  width: 90%;
+  padding: 12px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #ff69b4, #ff85c1);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover{
+  transform: scale(1.02);
+  background: linear-gradient(135deg, #ff4fa3, #ff69b4);
+}
+
+/* 🧠 PANEL */
+#panel{
+  padding: 20px;
+}
+
+/* 📦 LISTA DE PRODUCTOS */
+#lista{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 10px;
+}
+
+/* CARD PRODUCTO ADMIN */
+#lista div{
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+#lista div:hover{
+  transform: translateY(-3px);
+}
+
+/* IMAGEN */
+#lista img{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+/* BOTONES INTERNOS (editar/eliminar) */
+#lista button{
+  width: 48%;
+  margin: 5px 1%;
+  padding: 8px;
+  font-size: 12px;
+}
+
+/* 🟢 RESPONSIVE */
+@media (max-width: 600px){
+
+  #login{
+    width: 90%;
+  }
+
+  input, select, button{
+    width: 95%;
+  }
+}
+
+.btn-home{
+  display: inline-block;
+  margin: 10px auto 20px;
+  padding: 10px 15px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-home:hover{
+  background: #333;
+  transform: scale(1.05);
+}

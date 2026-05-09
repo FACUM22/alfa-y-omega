@@ -1,0 +1,265 @@
+
+
+/* =========================
+   BASE
+========================= */
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f6f6f6;
+  color:#111;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+.topbar, .header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+  background:#111;
+  color:white;
+}
+
+.brand{
+  font-size:20px;
+  font-weight:bold;
+}
+
+/* ADMIN BOTÓN */
+.admin-btn, .admin{
+  background:pink;
+  color:black;
+  padding:8px 12px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.admin-btn:hover, .admin:hover{
+  background:#ff69b4;
+}
+
+/* =========================
+   NAV
+========================= */
+.menu, .nav{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  background:#222;
+  padding:10px;
+  flex-wrap:wrap;
+}
+
+.menu a, .nav a{
+  color:white;
+  text-decoration:none;
+}
+
+.menu a:hover, .nav a:hover{
+  color:pink;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:40px;
+  background:linear-gradient(135deg,#ffe6f0,#fff);
+  margin:15px;
+  border-radius:15px;
+  flex-wrap:wrap;
+}
+
+.hero-text h1{
+  margin:0;
+  font-size:28px;
+}
+
+.hero-text p{
+  color:#555;
+}
+
+.hero-img{
+  width:220px;
+  border-radius:15px;
+}
+
+/* BOTÓN */
+.btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 15px;
+  background:black;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+}
+
+/* =========================
+   GRID PRODUCTOS
+========================= */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:15px;
+  padding:15px;
+}
+
+/* CARD */
+.card{
+  background:white;
+  padding:10px;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+  transition:0.2s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card img{
+  width:100%;
+  height:120px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+/* =========================
+   CONTACTO / INFO
+========================= */
+.contacto, .info{
+  background:white;
+  margin:15px;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   BOTONES
+========================= */
+button{
+  background:pink;
+  border:none;
+  padding:10px;
+  border-radius:8px;
+  cursor:pointer;
+  width:100%;
+  margin-top:8px;
+  font-weight:bold;
+}
+
+button:hover{
+  background:#ff69b4;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media(max-width:768px){
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-img{
+    margin-top:15px;
+  }
+
+  .menu, .nav{
+    flex-direction:column;
+  }
+}
+
+.contacto{
+  margin:15px;
+  padding:20px;
+  background:white;
+  border-radius:15px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.contact-title{
+  text-align:center;
+  margin:0;
+}
+
+.contact-subtitle{
+  text-align:center;
+  color:#666;
+  margin-bottom:15px;
+}
+
+/* GRID */
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:15px;
+  margin-top:10px;
+}
+
+/* CARD */
+.contact-card{
+  background:#f9f9f9;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+  transition:0.2s;
+}
+
+.contact-card:hover{
+  transform:translateY(-5px);
+}
+
+.icon{
+  font-size:30px;
+  margin-bottom:10px;
+}
+
+/* BOTÓN WHATSAPP */
+.contact-btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:8px 12px;
+  background:#25D366;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+}
+
+/* MAPA */
+.map-box{
+  margin-top:20px;
+  border-radius:12px;
+  overflow:hidden;
+}
+
+.map-box iframe{
+  width:100%;
+  height:200px;
+  border:0;
+}
+.card {
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}

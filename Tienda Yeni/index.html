@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tienda Online</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔝 TOP BAR -->
+<header class="topbar">
+  <div class="brand">🛍️ AlfaYOmega</div>
+
+  <a href="admin.html" class="admin">Admin ⚙️</a>
+</header>
+
+<!-- 🧭 NAV -->
+<nav class="nav">
+  <a href="index.html">Inicio</a>
+  <a href="ropa.html">Ropa</a>
+  <a href="joyas.html">Joyas</a>
+  <a href="perfumes.html">Perfumes</a>
+</nav>
+
+<!-- 🌟 HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Tu estilo, tu tienda 💖</h1>
+    <p>Ropa, joyas y perfumes seleccionados</p>
+
+    <a href="#productos" class="btn">Ver productos</a>
+  </div>
+
+  <img src="img/logo.jpg" class="hero-img">
+</section>
+
+
+<!-- 📍 INFO -->
+<section class="contacto">
+
+  <h2 class="contact-title">📍 Contacto & Ubicación</h2>
+
+  <p class="contact-subtitle">Estamos para ayudarte 💖</p>
+
+  <div class="contact-grid">
+
+    <div class="contact-card">
+      <div class="icon">📍</div>
+      <h3>Ubicación</h3>
+      <p>Montevideo, Uruguay</p>
+    </div>
+
+    <div class="contact-card">
+      <div class="icon">📱</div>
+      <h3>WhatsApp</h3>
+      <p>+598 99 403 472</p>
+      <a class="contact-btn" href="https://wa.me/59896215385" target="_blank">
+        Escribir
+      </a>
+    </div>
+
+    <div class="contact-card">
+      <div class="icon">⏰</div>
+      <h3>Horarios</h3>
+      <p>Lun - Sáb<br>9:00 - 20:00</p>
+    </div>
+
+  </div>
+
+  <div class="map-box">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18..."
+      loading="lazy">
+    </iframe>
+  </div>
+
+</section>
+
+<!-- FIREBASE -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+
+<script src="firebase.js"></script>
+<script src="script.js"></script>
+
+<script>
+cargarPreview();
+</script>
+
+</body>
+</html>

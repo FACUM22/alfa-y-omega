@@ -118,7 +118,7 @@ async function checkout(){
   try {
 
     const respuesta = await fetch(
-      "https://backend-alfayomega.onrender.com",
+      "https://backend-alfayomega.onrender.com/crear-preferencia",
       {
         method: "POST",
         headers: {
@@ -147,7 +147,7 @@ async function comprar(producto, precio){
   try {
 
     const respuesta = await fetch(
-      "https://backend-alfayomega.onrender.com",
+      "https://backend-alfayomega.onrender.com/crear-preferencia",
       {
         method: "POST",
         headers: {
